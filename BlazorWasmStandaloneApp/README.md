@@ -27,6 +27,14 @@ add_header Blazor-Environment "Production";
 
 Using this value, Blazor will be able to read the correct configuration environment.
 
+To reduce the amount of data transferred and speed up load time, you can also configure nginx to serve compressed versions of the files. These files are contained in the `_framework` folder of the published Blazor application.
+To configure compression, add this content to the nginx.conf file:
+```
+location /_framework/ {
+	gzip_static on;
+}
+```
+
 
 ## 2. Creating a build definition
 
