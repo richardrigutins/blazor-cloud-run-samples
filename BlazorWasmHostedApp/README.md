@@ -27,6 +27,7 @@ gcloud builds submit --config=cloudbuild.yaml --substitutions="_LOCATION=<your_r
 ```
 
 where you need to replace the placeholders with your actual values:
+
 - `<your_region>`: the region of your Cloud Run service and Artifact Registry repository.
 - `<your_repository>`: the name of your Artifact Registry repository.
 - `<your_image>`: the name of the Docker image.
