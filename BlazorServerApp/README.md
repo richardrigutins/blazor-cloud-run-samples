@@ -8,7 +8,7 @@ The following are the main steps required to add support for Cloud Run.
 
 Cloud Run is a serverless compute platform that lets you run containerized applications. One way to containerize a Blazor app is to add a Dockerfile.
 
-The [Dockerfile](BlazorServerApp/Dockerfile) contains the steps required to build and publish the Blazor Server application. 
+The [Dockerfile](BlazorServerApp/Dockerfile) contains the steps required to build and publish the Blazor Server application.
 
 Visual Studio can automatically add a Dockerfile while creating a new Blazor Server project, or at a later stage by right-clicking on the project file and selecting *Add > Docker support*.
 
@@ -27,6 +27,7 @@ gcloud builds submit --config=cloudbuild.yaml --substitutions="_LOCATION=<your_r
 ```
 
 where you need to replace the placeholders with your actual values:
+
 - `<your_region>`: the region of your Cloud Run service and Artifact Registry repository.
 - `<your_repository>`: the name of your Artifact Registry repository.
 - `<your_image>`: the name of the Docker image.

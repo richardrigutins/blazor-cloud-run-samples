@@ -22,7 +22,7 @@ steps:
   - '${_SERVICE_NAME}'
   - '--image=${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
   - '--region=${_LOCATION}'
-  - '--port=80'
+  - '--port=8080'
   - '--min-instances=0'
   - '--max-instances=1'
   - '--cpu=1'
